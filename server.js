@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-
+//
 // app.get('/', function (req, res) {
 //   res.send('Hello World!')
 // })
@@ -8,7 +8,7 @@ const app = express()
 // var database = require("./src/database.js");
 // database.initDatabase();
 //
-// app.use('/game', express.static('static/game'))
+app.use('/', express.static('static/game'))
 // app.use('/login', express.static('static/login'))
 // app.use('/hackGame', express.static('static/HW LATEST WEBSITE'))
 //
