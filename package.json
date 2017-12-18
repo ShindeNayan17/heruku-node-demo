@@ -7,6 +7,16 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShindeNayan17/heruku-node-demo"
+  },
+  "dependencies": {
+    "express": "4.16.2"
+  },
+  "engines": {
+    "node": "6.11.3"
+  }
   "author": "",
   "license": "ISC"
 }
