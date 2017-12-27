@@ -8,7 +8,7 @@ const app = express()
 // var database = require("./src/database.js");
 // database.initDatabase();
 //
-app.use('/', express.static('static/game'))
+app.use(express.static('static/game'))
 // app.use('/login', express.static('static/login'))
 // app.use('/hackGame', express.static('static/HW LATEST WEBSITE'))
 //
@@ -29,6 +29,6 @@ app.get("/ping",function (req,res) {
 
 })
 
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!')
+app.listen((process.env.PORT || 3000), function () {
+  console.log('Example app listening on port '+ process.env.PORT || 3000 +'!')
 })
